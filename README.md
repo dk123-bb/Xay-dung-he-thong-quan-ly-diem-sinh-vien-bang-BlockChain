@@ -14,11 +14,13 @@ Dự án là một hệ thống full-stack cho phép:
 🔐 Blockchain lưu hash điểm để đảm bảo không thể sửa đổi
 🗄️ Database MySQL lưu dữ liệu điểm chi tiết
 ⚖️ So sánh dữ liệu giữa Blockchain và Database để xác thực minh bạch
+
 🏗️ Kiến Trúc Hệ Thống
 Blockchain-Grading-System/
 ├── backend/        # Flask API + xử lý logic + Web3
 ├── blockchain/     # Smart Contract (Solidity - Hardhat)
 └── frontend/       # Giao diện web (HTML / JS / Bootstrap)
+
 ⚙️ Công Nghệ Sử Dụng
 🔗 Blockchain
 Solidity (^0.8.x)
@@ -34,8 +36,8 @@ hashlib (SHA-256)
 HTML / CSS / JavaScript
 Bootstrap (UI dashboard)
 AJAX / Fetch API
-🔐 Cơ Chế Blockchain Trong Hệ Thống
 
+🔐 Cơ Chế Blockchain Trong Hệ Thống
 Hệ thống hoạt động theo mô hình 2 lớp xác thực:
 
 1. Lưu dữ liệu
@@ -49,6 +51,7 @@ Khi kiểm tra:
 So sánh hash MySQL ↔ hash Blockchain
 Nếu giống → dữ liệu hợp lệ
 Nếu khác → dữ liệu bị chỉnh sửa
+
 🎯 Tính Năng Chính
 👨‍🏫 Giảng viên
 Thêm sinh viên
@@ -61,11 +64,13 @@ Kiểm tra tính toàn vẹn dữ liệu
 Xem điểm cá nhân
 Kiểm tra trạng thái xác thực điểm
 Đảm bảo dữ liệu không bị sửa
+
 🔐 Blockchain
 Lưu hash điểm
 Không thể chỉnh sửa dữ liệu
 Minh bạch và công khai xác thực
 Chống gian lận điểm số
+
 📦 Cài Đặt & Chạy Dự Án
 ⚠️ Yêu cầu hệ thống
 Node.js (v18+)
@@ -144,6 +149,7 @@ Lưu hash điểm lên blockchain
 Kiểm tra hash hợp lệ hay không
 📌 updateScore(...)
 Cập nhật hash mới (nếu được phép)
+
 🔍 Kiểm Tra Hệ Thống
 Backend: http://localhost:5000
 Frontend: mở index.html
@@ -153,6 +159,7 @@ Database: MySQL student_score
 🔗 Lỗi kết nối blockchain
 Kiểm tra RPC_URL
 Kiểm tra Hardhat node đang chạy
+
 🗄️ Lỗi MySQL
 Kiểm tra database student_score
 Kiểm tra user/password trong .env
@@ -162,11 +169,13 @@ Kiểm tra port 5000
 ⛓️ Lỗi smart contract
 Deploy lại contract
 Kiểm tra ABI + address
+
 🔐 Bảo Mật
 ❌ Không commit .env
 ❌ Không public private key
 🔐 Dùng testnet / Ganache khi dev
 💾 Backup ví blockchain
+
 📌 Ưu Điểm Hệ Thống
 ✔️ Minh bạch dữ liệu điểm
 ✔️ Chống sửa điểm trái phép
