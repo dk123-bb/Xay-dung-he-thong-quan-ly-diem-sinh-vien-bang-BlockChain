@@ -19,7 +19,7 @@
 ## 📌 Poster đề tài
 
 <p align="center">
-  <img src="poster2.png" alt="Blockchain Charity System Poster" width="850">
+  <img src="poster2.png" alt="Blockchain Charity System Poster" width="900">
 </p>
 </div>
 
